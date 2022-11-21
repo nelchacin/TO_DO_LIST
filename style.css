@@ -2,7 +2,8 @@
     padding: none;
     margin: none;
     background-color: #1a1a1a;
-    ;
+    color: whitesmoke;
+    font-family: sans-serif;
 
 }
 
@@ -10,6 +11,15 @@ section {
     border-radius: 30px;
     padding: 40px;
 }
+
+/* #noteInput{
+  border-color: whitesmoke;
+  border-radius: 6px;
+  padding: 10px;
+  margin-right: 20px;
+  
+
+} */
 
 #card {
     margin-left:auto;
@@ -28,7 +38,7 @@ section {
     width: 500px;
     height: 600px;
     background-color: #1a1a1a;
-    border-radius: ;
+    border-radius:0 ;
     transition: all .2s;
 }
 
@@ -41,101 +51,190 @@ section {
     box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
 }
 
+.input {
+  color: whitesmoke;
+  border: 2px solid  #17C3B2;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  max-width: 190px;
+ }
+ 
+ .input:active {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
 
 
-.icon-btn {
-    margin-left: 12px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #cdcdcd;
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    transition: width 0.2s ease-in-out;
-    font-weight: 500;
-    font-family: inherit;
+
+ #noteSubmit {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  border-radius: 7px;
+  margin-left: 50px;
+ }
+ 
+ #noteSubmit:before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ #noteSubmit:hover::before {
+  width: 105%;
+ }
+ 
+ #noteSubmit2:hover {
+  color: #111;
+ }
+
+ .btn-txt{
+  background-color: transparent;
+ }
+
+ #noteSubmit2 {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  border-radius: 7px;
+  margin-left: 50px;
+ }
+ 
+ #noteSubmit2:before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ #noteSubmit2:hover::before {
+  width: 105%;
+ }
+ 
+ #noteSubmit2:hover {
+  color: #111;
+ }
+
+ li{
+  font-size: 15px;
+ }
+ #noteSubmit3 {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  border-radius: 7px;
+  margin-left: 790px;
+  margin-top: 20px;
+ }
+ 
+ #noteSubmit3:before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17C3B2;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ #noteSubmit3:hover::before {
+  width: 105%;
+ }
+ 
+ #noteSubmit3:hover {
+  color: #111;
+ }
+
+ /* h3{
+  color: #17C3B2;
+  font-size: 40px;
+  margin-left: 100px;
+ } */
+
+ .loader {
+  padding-top: 90px;
+  margin-left: 840px;
+  position: relative;
+  margin-bottom: 60px;
+
+}
+
+.loader span {
+  position: absolute;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.loader span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.3px rgb(128, 198, 255);
+}
+
+.loader span:nth-child(2) {
+  color: rgb(128, 198, 255);
+  -webkit-text-stroke: 1px #17C3B2;
+  animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+  0%, 100% {
+    clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+     54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
   }
-  
-  .add-btn:hover {
-    width: 120px;
+
+  50% {
+    clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+     51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
   }
-  
-  .add-btn::before,
-  .add-btn::after {
-    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 10px;
-    top: calc(50% - 2px);
-    background: seagreen;
-  }
-  
-  .add-btn::after {
-    right: 14px;
-    overflow: hidden;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-  }
-  
-  .add-btn::before {
-    left: 14px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
-  
-  .icon-btn:focus {
-    outline: none;
-  }
-  
-  .btn-txt {
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  
-  .add-btn:hover::before,
-  .add-btn:hover::after {
-    width: 4px;
-    border-radius: 2px;
-  }
-  
-  .add-btn:hover .btn-txt {
-    opacity: 1;
-  }
-  
-  .add-icon::after,
-  .add-icon::before {
-    transition: all 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 2px;
-    top: calc(50% - 10px);
-    background: seagreen;
-    overflow: hidden;
-  }
-  
-  .add-icon::before {
-    left: 22px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-  }
-  
-  .add-icon::after {
-    right: 22px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-  }
-  
-  .add-btn:hover .add-icon::before {
-    left: 15px;
-    height: 4px;
-    top: calc(50% - 2px);
-  }
-  
-  .add-btn:hover .add-icon::after {
-    right: 15px;
-    height: 4px;
-    top: calc(50% - 2px);
-  }
+}
+
+
+ 

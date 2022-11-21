@@ -2,7 +2,12 @@ const notesForm = document.querySelector("#notesForm")
 const noteInput = document.querySelector("#noteInput")
 const noteSubmit = document.querySelector("#noteSubmit")
 const toDoList = document.querySelector("#toDoList")
+const resetButton= document.querySelector("#noteSubmit3")
 
+
+
+
+localStorage.clear()
 let toDoListStorage = []
 toDoListStorage = localStorage.getItem("notes") ? JSON.parse(localStorage.getItem("notes")) : []
 // let button = `<button onclick"deleteNote(this)">END TASK</button>`
@@ -17,7 +22,7 @@ notesForm.addEventListener("submit", e => {
 
 const listBuilder = (string) => {
     const note = document.createElement("li")
-    note.innerHTML = `${string} <button onclick="deleteNote(this)">x</button>`
+    note.innerHTML = `${string} <button onclick="deleteNote(this)" id="noteSubmit2">END TASK</button>`
     toDoList.appendChild(note)
 }
 
@@ -30,3 +35,5 @@ const deleteNote = (btn) => {
 }
 
 
+
+resetButton.onclick ()

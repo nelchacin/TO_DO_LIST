@@ -10,15 +10,19 @@
 </head>
 
 <body>
-    <h3>THING'S TO DO</h3>
+    <div class="loader">
+        <span>THING'S TO DO</span>
+        <span>THING'S TO DO</span>
+    </div>
     <div class="card" id="card">
         <div class="card2">
             <section>
                 <form id="notesForm">
-                    <input type="text" placeholder="Add Note" id="noteInput">
-                    <button id="noteSubmit" class="icon-btn add-btn">
+                    <!-- <input type="text" placeholder="Add Note..." id="noteInput" size="60" > -->
+                    <input type="text" name="text" class="input" placeholder="Add Task..." id="noteInput" size="150">
+                    <button id="noteSubmit" class="icon-btn-add-btn">
                         <div class="add-icon"></div>
-                        <div class="btn-txt">Add Task</div>
+                        <div class="btn-txt">Add</div>
                     </button>
                 </form>
                 <ul id="toDoList"></ul>
